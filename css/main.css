@@ -1,0 +1,21 @@
+body,html{
+    background: #660000;
+    padding: 1%;
+    margin: 0;
+    min-width: 360px;
+}
+
+.header {
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    background: border-box;
+}
+.row img {
+    height: 150px;
+    width: 150px;
+    margin: 8px;
+    border-radius: 25px;
+}
+

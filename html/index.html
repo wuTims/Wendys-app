@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <link href="../css/bootstrap.min.css" rel="stylesheet"/>
     <link href="../css/main.css" rel="stylesheet" />
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/angular.min.js"></script>
     <title>Wendy's Tracker</title>
 </head>
-<body>
+<body ng-app="WendysApp">
     <div class="header">
         <div class="container">
             WENDY'S TRACKER
         </div>
     </div>
 
-    <div class="main">
-        <div class="container">
+    <div class="main" ng-controller="MainController">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col">
-
+                <div class="col-xs-6 col-sm-4 col-md-2" ng-repeat="item in foodItems">
+                    <img src="{{item.icon}}">
                 </div>
             </div>
         </div>
